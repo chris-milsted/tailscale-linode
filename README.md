@@ -1,6 +1,6 @@
 # Using Tailscale as a VPN solution to connect an LKE-E cluster to an on premise subnet.
 
-As part of a PoC, I had to come up with a way to connect an ERP install in an LKE-E (Linode Kubernetes Engine, Enterprise) to some existing machines which were going to stay on premise. Longer term I expect VPN gateways to be available, but for now I was looking for a solution that would provide this feature with minimum fuss and also offer a number of features such as robust access and user controls to provide the requisite level of security. 
+As part of a PoC, I had to come up with a way to connect an application install in an LKE-E (Linode Kubernetes Engine, Enterprise) to some existing machines which were going to stay on premise. Longer term I expect VPN gateways to be available, but for now I was looking for a solution that would provide this feature with minimum fuss and also offer a number of features such as robust access and user controls to provide the requisite level of security. 
 
 I should also note that I have a very restrictive firewall in place (literally block everything apart from the /32 address of my laptop from which I am connecting to it from). I was curious to see if there was a solution which would work in this case as well.
 

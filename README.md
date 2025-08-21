@@ -54,9 +54,11 @@ lke509158-734007-6kdxs-rq6ln   Ready    <none>   21h   v1.31.8   10.0.0.2      1
 
 A pair of linodes, one of which I would add into my VPN solution and another which was going to pretend to be a subnet (well at least a subnet of a single /32 machine to test) which did not have any VPN software installed on it. This should simulate a bunch of legacy servers which we did not want to have to install any new software or make any changes to.
 
+```bash
 ubuntu-ams-tailscale-vm       │ nl-ams │ g6-standard-4 │ linode/ubuntu24.04 │ 172.235.175.230
 
 ams-ubuntu-subnet             │ nl-ams │ g6-standard-2 │ linode/ubuntu24.04 │ 172.235.168.115
+```
 
 So the machine ending in 230 would be part of the VPN and the machine ending in 115 has zero VPN software added to it.
 
